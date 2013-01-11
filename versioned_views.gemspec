@@ -5,12 +5,12 @@ require 'versioned_views/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "versioned_views"
-  gem.version       = VersionedViews::VERSION
+  gem.version       = "0.0.1"
   gem.authors       = ["keikun17@gmail.com"]
-  gem.email         = ["keikun17@gmail.com,buddy@aelogica.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.email         = ["keikun17@gmail.com"]
+  gem.description   = "Rails 3 / AbstractController gem for versioned views"
+  gem.summary       = "render_versioned({:layout => 'application', :version => 'v2'})"
+  gem.homepage      = "https://github.com/keikun17/versioned_views"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
