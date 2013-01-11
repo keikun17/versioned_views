@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'versioned_views'
+    gem 'versioned_views', :git => 'git@github.com:keikun17/versioned_views.git'
 
 And then execute:
 
@@ -18,15 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-Drop this line to the Controller
+Drop this line to the controller
 
     include VersionedViews
 
-Versioned Layout Templates Go to `app/views/layouts/<version>`
+Versioned layout templates Go to `app/views/layouts/<version>`
 
-Versioned Views Go to `app/views/<version>`
+Versioned views go to `app/views/<version>`
 
-Render versioned layouts by replacing calling
+Render versioned layouts by calling
 
     render_versioned({:layout => "application", :version => "v2"})
 
