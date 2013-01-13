@@ -20,11 +20,11 @@ Drop this line to the controller
 
     include VersionedViews
 
-Versioned layout templates Go to `app/views/layouts/<version>`
+Versioned layout templates go to `app/views/layouts/<version>`
 
 Versioned views go to `app/views/<version>`
 
-Render versioned layouts by calling
+Render versioned layouts by calling this in the controller action
 
     render_versioned({:layout => "application", :version => "v2"})
 
